@@ -41,9 +41,9 @@ namespace HW1a_Sales
             double subtotal = price * count; //cost before tax, all var in section needs to be defined after inputs
             double salestax = subtotal * taxrate;
             double saletotal = salestax + subtotal; //total of tax and subtotal
-            Console.WriteLine("The subtotal for your purchase is " + subtotal.ToString("N2"));
-            Console.WriteLine("The tax for your purchase is " + salestax.ToString("N2"));
-            Console.WriteLine("The total cost for the sale is " + saletotal.ToString("N2"));
+            Console.WriteLine("The subtotal for your purchase is $" + subtotal.ToString("N2"));
+            Console.WriteLine("The tax for your purchase is $" + salestax.ToString("N2"));
+            Console.WriteLine("The total cost for the sale is $" + saletotal.ToString("N2"));
         }
     }
 }
