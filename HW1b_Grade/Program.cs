@@ -63,9 +63,9 @@ namespace HW1b_Grade
             double ex3Weight = ex3 * 0.25;
             double hwWeight = hw * 0.20;
             double clparWeight = clpar * 0.15;
-            double sum = ex1Weight + ex2Weight + ex3Weight + hwWeight + clparWeight; //adds weighted portions to get final grade
+            double sum = (ex1Weight + ex2Weight + ex3Weight + hwWeight + clparWeight)/100; //adds weighted portions to get final grade, turns into % form
 
-            Console.WriteLine($"{lname}, {fname} (ID:{stuid}), your final grade is: {sum.ToString("N2")}%");
+            Console.WriteLine($"{lname}, {fname} (ID:{stuid}), your final grade is: {sum.ToString("P2")}");
             Console.ReadKey();
         }
     }
